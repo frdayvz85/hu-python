@@ -63,3 +63,87 @@ $(document).ready(function () {
     }
   });
 });
+
+window.addEventListener("DOMContentLoaded", () => {
+  console.log("Ready");
+  const langEN = document.getElementById("lang-en");
+  const langHU = document.getElementById("lang-hu");
+
+  const allEngs = document.querySelectorAll(".lang-en-x");
+  const allHuns = document.querySelectorAll(".lang-hu-x");
+
+  console.log({ allHuns });
+
+  const currentLang = sessionStorage.getItem("curr-lang");
+  // update page title
+  const currentURL = window.location.href;
+  const splitted = currentURL.split("/");
+  const currentPage = splitted[splitted.length - 1];
+
+  console.log(currentLang);
+  if (!currentLang) {
+    sessionStorage.setItem("curr-lang", "EN");
+  }
+
+  if (currentLang === "HU") {
+    for (let i = 0; i < allHuns.length; i++) {
+      allHuns[i].style.display = "block";
+      allEngs[i].style.display = "none";
+    }
+    updatePageTitle(currentPage, "HU");
+  }
+
+  if (currentLang === "EN") {
+    for (let i = 0; i < allEngs.length; i++) {
+      allEngs[i].style.display = "block";
+      allHuns[i].style.display = "none";
+    }
+    updatePageTitle(currentPage, "EN");
+  }
+
+  langEN.addEventListener("click", () => {
+    console.log("en");
+    sessionStorage.setItem("curr-lang", "EN");
+    for (let i = 0; i < allEngs.length; i++) {
+      allEngs[i].style.display = "block";
+      allHuns[i].style.display = "none";
+    }
+    updatePageTitle(currentPage, "EN");
+  });
+
+  langHU.addEventListener("click", () => {
+    console.log("hu");
+    sessionStorage.setItem("curr-lang", "HU");
+    for (let i = 0; i < allHuns.length; i++) {
+      allHuns[i].style.display = "block";
+      allEngs[i].style.display = "none";
+    }
+    updatePageTitle(currentPage, "HU");
+  });
+});
+
+function updatePageTitle(page, currentLang) {
+  if (page === "index.html" && currentLang === "HU") {
+    document.title = "Itton";
+  } else if (page === "index.html" && currentLang === "EN") {
+    document.title = "Home";
+  } else if (page === "labs.html" && currentLang === "HU") {
+    document.title = "Labs";
+  } else if (page === "labs.html" && currentLang === "EN") {
+    document.title = "Labs";
+  } else if (page === "instructors.html" && currentLang === "HU") {
+    document.title = "Oktatók";
+  } else if (page === "instructors.html" && currentLang === "EN") {
+    document.title = "Instructors";
+  } else if (page === "faqs.html" && currentLang === "HU") {
+    document.title = "GYIK";
+  } else if (page === "faqs.html" && currentLang === "EN") {
+    document.title = "FAQs";
+  } else if (page === "thesis.html" && currentLang === "HU") {
+    document.title = "Tézis";
+  } else if (page === "thesis.html" && currentLang === "EN") {
+    document.title = "Theses";
+  } else {
+    console.log("noe one");
+  }
+}

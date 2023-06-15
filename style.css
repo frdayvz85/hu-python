@@ -692,6 +692,15 @@ iframe {
 .info-page article {
   font-size: 18px;
 }
+.lang-eng,
+.lang-hu {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+.lang-hu-x {
+  display: none;
+}
 @media screen and (max-width: 1080px) {
   .info {
     grid-template-columns: 1fr;

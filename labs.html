@@ -1,127 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Labs</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Labs</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"></script>
-</head>
+  <body>
+    <div class="navigation-wrap bg-light start-header start-style">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="navbar navbar-expand-md navbar-light">
+              <a class="navbar-brand" href="index.html"
+                ><img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Python_logo_and_wordmark.svg/2560px-Python_logo_and_wordmark.svg.png"
+                  alt=""
+              /></a>
 
-<body>
-  <div class="navigation-wrap bg-light start-header start-style">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <nav class="navbar navbar-expand-md navbar-light">
-            <a class="navbar-brand" href="index.html"><img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Python_logo_and_wordmark.svg/2560px-Python_logo_and_wordmark.svg.png"
-                alt="" /></a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto py-4 py-md-0">
+                  <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 lang-en-x">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ml-auto py-4 py-md-0">
-                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                  <a class="nav-link" href="index.html">Itthon</a>
-                </li>
+                  <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 lang-en-x">
+                    <a class="nav-link" href="labs.html">Labs</a>
+                  </li>
+                  <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 lang-en-x">
+                    <a class="nav-link" href="instructors.html">Instructors</a>
+                  </li>
+                  <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 lang-en-x">
+                    <a class="nav-link" href="faqs.html">FAQs</a>
+                  </li>
+                  <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 lang-en-x">
+                    <a class="nav-link" href="thesis.html">Thesis</a>
+                  </li>
 
-                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                  <a class="nav-link" target="_blank"
-                    href="https://canvas.elte.hu/courses/34322/assignments/syllabus">Labs</a>
-                </li>
-                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                  <a class="nav-link" href="instructors.html">Oktatók</a>
-                </li>
-                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                  <a class="nav-link" href="faqs.html">GYIK</a>
-                </li>
-                </li>
-                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                  <a class="nav-link" href="thesis.html">Tézis</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
+                  <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 lang-hu-x">
+                    <a class="nav-link" href="index.html">Itthon</a>
+                  </li>
+
+                  <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 lang-hu-x">
+                    <a class="nav-link" href="labs.html">Labs</a>
+                  </li>
+                  <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 lang-hu-x">
+                    <a class="nav-link" href="instructors.html">Oktatók</a>
+                  </li>
+                  <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 lang-hu-x">
+                    <a class="nav-link" href="faqs.html">GYIK</a>
+                  </li>
+                  <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 lang-hu-x">
+                    <a class="nav-link" href="thesis.html">Tézis</a>
+                  </li>
+                </ul>
+
+                <div class="lang-select pl-4 pl-md-0 ml-0 ml-md-4">
+                  <img
+                    class="lang-eng"
+                    id="lang-en"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEXUlEQVR4nO2Yj09TVxTH+0/NCTKKOCUoKBTZpPwQZUwCbChxZrgYolkIicRsI8vi5rZs7mfCzH6VgdMMgQGR8aMi/gKFMUv7Xkv7XmlL+9q+73Lv6ys8Hq8tUp1Z3je5aZr0nnM/99x77jk1GHTp0qVLly5dz4GiHIe1WglG8Pl3D/By6W8wFltSHrJsGS8ohqzN2DIWW5B7sBudn07Dx/nh/eQiFrN3UHsqAHv+bvh/+QkQRQXIgs2HE60j/wlA4+khPJz3Ijg8BOZgsWQrcxs8755TA8iO2CNVEO7eUUAQpt6+xyiq/v2ZABRWXkXXr3MQWAbus61xG2xlGULWSWpHBRC42gNHQb7046zt4D94D2LArwBZ9gk0nDtLup8KQI7Jgrb3J8G5A1j+5iss5hrpXPJJviMSidtRAVzumkXI6wP/YSdsO16kEwmQv3t1UbKm73tQ0zyQVoDXmgeo3dDkBNiKsvi8pZMnEHHYFf6FcFQNQIyY6//AzQkWwswDOGuPxo24GuoQnp9TGImKIn7u/Rt7y3u3BJBX1oOvr8xC8PDgLnSsbl5JEVaGBlWbN3l7CYffvLExgDxa2kbBOgN098nlpmHMzqTREUMhhUGXO0jD/iQALW2jYFjZzx7Jz0sZG/pZ8kh+yDEjcxMCkEF2llyksIdT7AzJBiQrrNfElAtVb9xICUAR6ddrlJGeU0eaJJDCKmUCSQogj5o1Z5MpP5TwbIYjYlIA8rYE+dhdy9qe8K7df8ih7tSfG64rZYD12cH3/bdY3CVnh2x4L30MURBUzrUAVgb64SgqiGc77kIHRJ9v09lOBYA0SwsgXTL87wBs6xw+78OgA2ToEUBaj1C6L5mehZIo5YdsX4VUm0ejykYnvLAAV1NjfKeddbUQZmeSRmB4jFUtJjQxDsb8quKVDzsYWkLsP7xxD5ISQOv5cbg5ZVElBoP09ZVbO3veLvo6O51++lonA5CLOAcbUNoNh6VXPtYD2HfvpN95Pii9yqbu1AEqGvrwl9Wp2qmVwQE4Sg5Ii8rcRrslweWmEco3S2V1KgC0jD7UQ+siUtuvVYRl4T79dnweW1WO0O0pWKeXUN3UnxggoVFFa2dGaOoWbt1x48jx/i31AxWNfRizutSbRWom037NzVIBkLDaGY2wrineli9/oRnWJ+3IckwWtHdawfHJj6v/xytwsP7kaTQ0PgbG/Ep8Ae4z7yDMsvRiHdC4WFvtiQsqNRLGo0dw1h9bTRj1x7QBojwPT3sbDRv5MVNqQnBkGLNzPBpahhIuYKsAxtioPTmIuzPK/6mIAtevwb4vT+Mhi0bh+6EL9j250nHJyYL3s0sIeAO4+OU9+gdTKs7TAWAsttDj2fHRFHz+sAIi6vWCO9+uBnDWVK/m4ebjiNgeY2iUQWnt9ZSdphPAGBumo9fosV0vFQBx4ijcS1s7m92Pt87d3LSzpwFgjI2mMyOY/2dZG0CXLl26dOnSZXj2+hdh4D9R4Q/X/wAAAABJRU5ErkJggg=="
+                  />
+                  <img
+                    class="lang-hu"
+                    id="lang-hu"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAdElEQVR4nO3VywnAUAhE0SkrG/uxKxt8IKlgsn0diOEesAD/EgAAf+CQN4VIIOiAGaHb9EiYJY75qpozGosf2enXm0Ik0HTAjNBteiQOS9zzVT2c0V78yLIebwqRQNEBM0K36ZFIlrjmq5qc0Vr8yAAA0EIf3M01s5eDLIsAAAAASUVORK5CYII="
+                  />
+                </div>
+              </div>
+            </nav>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="section home-page">
-    <div class="container">
-      <div class="info-page">
-        <p style="color:red">
-          A labor anyagok csak beiratkozott hallgatók számára érhetők el az egyetemi Canvas rendszeren keresztül ezen a
-          <a target="_blank" href="https://canvas.elte.hu/courses/34322/assignments/syllabus">linken</a> keresztül.
-
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="section home-page">
-    <div class="container">
-      <div class="info">
-        <div class="image-logo">
-          <img src="./elte.jpg" alt="" />
-        </div>
-        <div class="info-txt">
-          <p>
-            Üdvözöljük a Python Labban! Ez a labor azoknak a diákoknak készült, akik meg akarják tanulni
-            Python-programok írását, az alapoktól a haladó fogalmakig, mint például az objektum-orientált programozás
-            (OOP), a csomagok pip használatával történő kezelése és a haladó modulok használata. A labor első részében a
-            hallgatók az alapokkal kezdik, és fokozatosan térnek át az összetettebb témákra.
+    <div class="section home-page">
+      <div class="container">
+        <div class="info-page">
+          <p style="color: red" class="lang-en-x">
+            Lab materials are only available for enrolled students through the
+            university Canvas system through this
+            <a
+              target="_blank"
+              href="https://canvas.elte.hu/courses/34322/assignments/syllabus"
+              >link</a
+            >.
           </p>
-          <p>
-            Ennek a labornak a részeként a hallgatók a NetAcad Academy Big Data Analytics kurzusát fogják használni. Ez
-            a kurzus segít a hallgatóknak átfogóan megérteni a Big Data Analytics kulcsfontosságú fogalmait, eszközeit
-            és technikáit.
+          <p style="color: red" class="lang-hu-x">
+            A labor anyagok csak beiratkozott hallgatók számára érhetők el az
+            egyetemi Canvas rendszeren keresztül ezen a
+            <a
+              target="_blank"
+              href="https://canvas.elte.hu/courses/34322/assignments/syllabus"
+              >linken</a
+            >
+            keresztül.
           </p>
-        </div>
-        <div class="info-txt">
-          <p>
-            A kurzus során a hallgatók megtanulják nagy mennyiségű adat elemzését, minták azonosítását és adatvezérelt
-            döntések meghozatalát. Azt is megtanulják, hogyan használhatnak fejlett analitikai eszközöket és
-            technológiákat, mint például a Hadoop, a Spark és az R az adatok hatékony elemzéséhez.
-          </p>
-
-          <p>
-            A kurzus végére a hallgatók mélyen megértik a Big Data Analyticset, és képesek lesznek alkalmazni
-            készségeiket a valós üzleti problémák megoldására. Ezenkívül a tanfolyamot sikeresen elvégző hallgatók
-            oklevelet kapnak a NetAcademytől, amellyel bemutathatják képességeiket és tudásukat a potenciális
-            munkaadóknak. További információ a második rész tanfolyamról (
-            <a target="_blank" href="https://www.netacad.com/courses/iot/big-data-analytics"
-              class="external-link">https://www.netacad.com/courses/iot/big-data-analytics</a>
-            )
-          </p>
-          <p>
-            Összességében a Python Lab és a NetAcad Academy Big Data Analytics kurzus kombinációja átfogó és gyakorlati
-            oktatást nyújt a hallgatóknak a mai munkaerőpiacon az egyik legkeresettebb készségről. Tapasztalt oktatóink
-            végigvezetik Önt a teljes folyamaton, győződjön meg róla, hogy erős alapokkal rendelkezik a Python
-            programozásban. A labor végére mélyen ismeri a Pythont, és jól felkészült lesz a valós programozási
-            problémák megoldására. Csatlakozzon hozzánk még ma, és tegye meg az első lépést afelé, hogy képzett Python
-            programozóvá váljon!
-          </p>
-        </div>
-        <div>
-          <iframe src="https://www.youtube.com/embed/watch?v=37DHD-5fhiM&list=PLqhYARgo2XifP-1fF-ZBSh9vmQTd6VX_1">
-          </iframe>
         </div>
       </div>
     </div>
-  </div>
-</body>
 
+    <div class="section home-page">
+      <div class="container">
+        <div class="info">
+          <div class="image-logo">
+            <img src="./elte.jpg" alt="" />
+          </div>
+          <div class="info-txt lang-en-x">
+            <p>
+              Welcome to the Python Lab! This lab is designed for students who
+              want to learn how to write Python programs, from the very basics
+              to advanced concepts like Object-Oriented Programming (OOP),
+              managing packages using pip, and using advanced modules. In the
+              first part of the lab, students will start with the basics and
+              gradually move on to more complex topics.
+            </p>
+            <p>
+              As a part of this lab, students will be using the NetAcad Academy
+              course on Big Data Analytics. This course will help students gain
+              a comprehensive understanding of the key concepts, tools, and
+              techniques used in Big Data Analytics.
+            </p>
+          </div>
+          <div class="info-txt lang-en-x">
+            <p>
+              Throughout the course, students will learn how to analyze large
+              amounts of data, identify patterns, and make data-driven
+              decisions. They will also learn how to use advanced analytics
+              tools and technologies, such as Hadoop, Spark, and R, to analyze
+              data efficiently.
+            </p>
+
+            <p>
+              By the end of the course, students will have gained a deep
+              understanding of Big Data Analytics and will be able to apply
+              their skills to real-world business problems. Additionally,
+              students who successfully complete the course will receive a
+              certificate from NetAcademy, which they can use to showcase their
+              skills and knowledge to potential employers. see more about the
+              second part course Â (
+              <a
+                target="_blank"
+                href="https://www.netacad.com/courses/iot/big-data-analytics"
+                class="external-link"
+                >https://www.netacad.com/courses/iot/big-data-analytics</a
+              >
+              )
+            </p>
+            <p>
+              Overall, the combination of the Python Lab and the NetAcad Academy
+              course on Big Data Analytics provides students with a
+              comprehensive and practical education in one of the most
+              sought-after skills in today's job market.Our experienced
+              instructors will guide you through the entire process, making sure
+              you have a strong foundation in Python programming. By the end of
+              the lab, you'll have a deep understanding of Python and be
+              well-equipped to tackle real-world programming problems. Join us
+              today and take the first step towards becoming a skilled Python
+              programmer!
+            </p>
+          </div>
+
+          <div class="info-txt lang-hu-x">
+            <p>
+              Üdvözöljük a Python Labban! Ez a labor azoknak a diákoknak
+              készült, akik meg akarják tanulni Python-programok írását, az
+              alapoktól a haladó fogalmakig, mint például az objektum-orientált
+              programozás (OOP), a csomagok pip használatával történő kezelése
+              és a haladó modulok használata. A labor első részében a hallgatók
+              az alapokkal kezdik, és fokozatosan térnek át az összetettebb
+              témákra.
+            </p>
+            <p>
+              Ennek a labornak a részeként a hallgatók a NetAcad Academy Big
+              Data Analytics kurzusát fogják használni. Ez a kurzus segít a
+              hallgatóknak átfogóan megérteni a Big Data Analytics
+              kulcsfontosságú fogalmait, eszközeit és technikáit.
+            </p>
+          </div>
+          <div class="info-txt lang-hu-x">
+            <p>
+              A kurzus során a hallgatók megtanulják nagy mennyiségű adat
+              elemzését, minták azonosítását és adatvezérelt döntések
+              meghozatalát. Azt is megtanulják, hogyan használhatnak fejlett
+              analitikai eszközöket és technológiákat, mint például a Hadoop, a
+              Spark és az R az adatok hatékony elemzéséhez.
+            </p>
+
+            <p>
+              A kurzus végére a hallgatók mélyen megértik a Big Data
+              Analyticset, és képesek lesznek alkalmazni készségeiket a valós
+              üzleti problémák megoldására. Ezenkívül a tanfolyamot sikeresen
+              elvégző hallgatók oklevelet kapnak a NetAcademytől, amellyel
+              bemutathatják képességeiket és tudásukat a potenciális
+              munkaadóknak. További információ a második rész tanfolyamról (
+              <a
+                target="_blank"
+                href="https://www.netacad.com/courses/iot/big-data-analytics"
+                class="external-link"
+                >https://www.netacad.com/courses/iot/big-data-analytics</a
+              >
+              )
+            </p>
+            <p>
+              Összességében a Python Lab és a NetAcad Academy Big Data Analytics
+              kurzus kombinációja átfogó és gyakorlati oktatást nyújt a
+              hallgatóknak a mai munkaerőpiacon az egyik legkeresettebb
+              készségről. Tapasztalt oktatóink végigvezetik Önt a teljes
+              folyamaton, győződjön meg róla, hogy erős alapokkal rendelkezik a
+              Python programozásban. A labor végére mélyen ismeri a Pythont, és
+              jól felkészült lesz a valós programozási problémák megoldására.
+              Csatlakozzon hozzánk még ma, és tegye meg az első lépést afelé,
+              hogy képzett Python programozóvá váljon!
+            </p>
+          </div>
+          <div>
+            <iframe
+              src="https://www.youtube.com/embed/watch?v=37DHD-5fhiM&list=PLqhYARgo2XifP-1fF-ZBSh9vmQTd6VX_1"
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
 </html>

@@ -8,7 +8,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tézis</title>
+    <title>Theses</title>
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" />
@@ -37,25 +37,47 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ml-auto py-4 py-md-0">
-                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 lang-en-x">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 lang-en-x">
+                  <a class="nav-link" href="labs.html">Labs</a>
+                </li>
+                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 lang-en-x">
+                  <a class="nav-link" href="instructors.html">Instructors</a>
+                </li>
+                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 lang-en-x">
+                  <a class="nav-link" href="faqs.html">FAQs</a>
+                </li>
+                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 lang-en-x">
+                  <a class="nav-link" href="thesis.html">Thesis</a>
+                </li>
+
+                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 lang-hu-x">
                   <a class="nav-link" href="index.html">Itthon</a>
                 </li>
 
-                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                  <a class="nav-link" target="_blank"
-                    href="https://canvas.elte.hu/courses/34322/assignments/syllabus">Labs</a>
+                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 lang-hu-x">
+                  <a class="nav-link" href="labs.html">Labs</a>
                 </li>
-                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 lang-hu-x">
                   <a class="nav-link" href="instructors.html">Oktatók</a>
                 </li>
-                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 lang-hu-x">
                   <a class="nav-link" href="faqs.html">GYIK</a>
                 </li>
-                </li>
-                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 lang-hu-x">
                   <a class="nav-link" href="thesis.html">Tézis</a>
                 </li>
               </ul>
+
+              <div class="lang-select pl-4 pl-md-0 ml-0 ml-md-4">
+                <img class="lang-eng" id="lang-en"
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEXUlEQVR4nO2Yj09TVxTH+0/NCTKKOCUoKBTZpPwQZUwCbChxZrgYolkIicRsI8vi5rZs7mfCzH6VgdMMgQGR8aMi/gKFMUv7Xkv7XmlL+9q+73Lv6ys8Hq8tUp1Z3je5aZr0nnM/99x77jk1GHTp0qVLly5dz4GiHIe1WglG8Pl3D/By6W8wFltSHrJsGS8ohqzN2DIWW5B7sBudn07Dx/nh/eQiFrN3UHsqAHv+bvh/+QkQRQXIgs2HE60j/wlA4+khPJz3Ijg8BOZgsWQrcxs8755TA8iO2CNVEO7eUUAQpt6+xyiq/v2ZABRWXkXXr3MQWAbus61xG2xlGULWSWpHBRC42gNHQb7046zt4D94D2LArwBZ9gk0nDtLup8KQI7Jgrb3J8G5A1j+5iss5hrpXPJJviMSidtRAVzumkXI6wP/YSdsO16kEwmQv3t1UbKm73tQ0zyQVoDXmgeo3dDkBNiKsvi8pZMnEHHYFf6FcFQNQIyY6//AzQkWwswDOGuPxo24GuoQnp9TGImKIn7u/Rt7y3u3BJBX1oOvr8xC8PDgLnSsbl5JEVaGBlWbN3l7CYffvLExgDxa2kbBOgN098nlpmHMzqTREUMhhUGXO0jD/iQALW2jYFjZzx7Jz0sZG/pZ8kh+yDEjcxMCkEF2llyksIdT7AzJBiQrrNfElAtVb9xICUAR6ddrlJGeU0eaJJDCKmUCSQogj5o1Z5MpP5TwbIYjYlIA8rYE+dhdy9qe8K7df8ih7tSfG64rZYD12cH3/bdY3CVnh2x4L30MURBUzrUAVgb64SgqiGc77kIHRJ9v09lOBYA0SwsgXTL87wBs6xw+78OgA2ToEUBaj1C6L5mehZIo5YdsX4VUm0ejykYnvLAAV1NjfKeddbUQZmeSRmB4jFUtJjQxDsb8quKVDzsYWkLsP7xxD5ISQOv5cbg5ZVElBoP09ZVbO3veLvo6O51++lonA5CLOAcbUNoNh6VXPtYD2HfvpN95Pii9yqbu1AEqGvrwl9Wp2qmVwQE4Sg5Ii8rcRrslweWmEco3S2V1KgC0jD7UQ+siUtuvVYRl4T79dnweW1WO0O0pWKeXUN3UnxggoVFFa2dGaOoWbt1x48jx/i31AxWNfRizutSbRWom037NzVIBkLDaGY2wrineli9/oRnWJ+3IckwWtHdawfHJj6v/xytwsP7kaTQ0PgbG/Ep8Ae4z7yDMsvRiHdC4WFvtiQsqNRLGo0dw1h9bTRj1x7QBojwPT3sbDRv5MVNqQnBkGLNzPBpahhIuYKsAxtioPTmIuzPK/6mIAtevwb4vT+Mhi0bh+6EL9j250nHJyYL3s0sIeAO4+OU9+gdTKs7TAWAsttDj2fHRFHz+sAIi6vWCO9+uBnDWVK/m4ebjiNgeY2iUQWnt9ZSdphPAGBumo9fosV0vFQBx4ijcS1s7m92Pt87d3LSzpwFgjI2mMyOY/2dZG0CXLl26dOnSZXj2+hdh4D9R4Q/X/wAAAABJRU5ErkJggg==" />
+                <img class="lang-hu" id="lang-hu"
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAdElEQVR4nO3VywnAUAhE0SkrG/uxKxt8IKlgsn0diOEesAD/EgAAf+CQN4VIIOiAGaHb9EiYJY75qpozGosf2enXm0Ik0HTAjNBteiQOS9zzVT2c0V78yLIebwqRQNEBM0K36ZFIlrjmq5qc0Vr8yAAA0EIf3M01s5eDLIsAAAAASUVORK5CYII=" />
+              </div>
             </div>
           </nav>
         </div>
@@ -64,33 +86,79 @@
   </div>
 
   <div class="section home-page">
+
     <body>
-      <h1>Szakdolgozatok Témák</h1>
+      <div class="container">
+        <h1 class="lang-en-x">Theses Topics</h1>
+        <h1 class="lang-hu-x">Szakdolgozatok Témák</h1>
 
-      <h2>M.Sc témák</h2>
-      <ul>
-        <li><b>Python mikroszolgáltatások: Monolitok feltörése</b></li>
-        <p>Ez a témakör a mikroszolgáltatási architektúra Pythonban való megvalósítását kutatja, és a monolitikus
-          alkalmazások moduláris szolgáltatásokra bontásának folyamatára összpontosít. A dolgozat célja ennek a
-          megközelítésnek a hatékonyságának értékelése, valamint ajánlások megfogalmazása a fejlesztők és szervezetek
-          számára. </p>
-        <li><b> A Consul hatékonyságának értékelése a mikroszolgáltatás-architektúra szolgáltatásfelderítésében és
-            konfigurációkezelésében</b></li>
-        <p>Ez a dolgozat annak értékelésére összpontosíthat, hogy a Consul milyen jól teljesít egy mikroszolgáltatási
-          architektúrában, összehasonlítva más szolgáltatásfelderítési és konfigurációkezelési eszközökkel.</p>
-        <li>3. téma</li>
-      </ul>
+        <div class="thesis-content lang-en-x">
+          <h2>M.Sc Topics</h2>
+          <ul>
+            <li><b>Python Microservices: Breaking Monoliths</b></li>
+            <p>This topic explores the implementation of microservices architecture in Python and focuses on the process
+              of breaking down monolithic applications into modular services. The thesis aims to evaluate the
+              effectiveness of this approach and provide recommendations for developers and organizations. </p>
+            <li><b> Evaluating the effectiveness of Consul for service discovery and configuration management in
+                microservices architecture</b></li>
+            <p> This thesis could focus on evaluating how well Consul performs in a microservices architecture, compared
+              to other service discovery and configuration management tools.</p>
+            <li>Topic 3</li>
+          </ul>
 
-      <h2>B.Sc témák</h2>
-      <ul>
-        <li><b>Mikroszolgáltatások Python segítségével </b></li>
-        <p>Ez a B.Sc szakdolgozat a Python használatát vizsgálja mikroszolgáltatás-alapú alkalmazások építésére, megvizsgálja a tervezési elveket, a fejlesztési keretrendszereket és a legjobb gyakorlatokat. </p>
-        <li><b>ROS2 alapú autonóm mobil robotvezérlő tervezése és megvalósítása</b> </li>
-        <p> Jelen Bachelor diplomamunka egy autonóm mobil robotrendszer tervezésére és megvalósítására összpontosít Robot Operating System 2 (ROS2) segítségével.</p>
-        <li><b> Robusztus IoT-infrastruktúra felépítése több Raspberry Pi szerverrel</b> </li>
-        <p> Ez a dolgozat egy rendkívül méretezhető és rugalmas IoT infrastruktúra létrehozásáról szól több Raspberry Pi szerver használatával. Az InfluxDB, az MQTT, a Grafana, a Node-RED és a Docker összekapcsolásával ez a dolgozat bemutatja, hogyan lehet adatokat gyűjteni, tárolni, elemezni és megjeleníteni több IoT-eszközről a hálózaton. Ez a beállítás könnyen bővíthető további eszközök és szerverek befogadására, így ideális nagyszabású IoT-telepítésekhez.</p>
-      </ul>
+          <h2>B.Sc Topics</h2>
+          <ul>
+            <li><b>Microservices with Python </b></li>
+            <p>This B.Sc thesis explores the use of Python for building microservices-based applications, examining
+              design principles, development frameworks, and best practices. </p>
+            <li><b>Design and Implementation of a ROS2-based Autonomous Mobile Robot Controller</b> </li>
+            <p> This Bachelor's thesis focuses on the design and implementation of an autonomous mobile robot system
+              using the Robot Operating System 2 (ROS2).</p>
+            <li><b> Building a Robust IoT Infrastructure with Multiple Raspberry Pi Servers </b> </li>
+            <p> This thesis is about creating a highly scalable and resilient IoT infrastructure using multiple
+              Raspberry Pi servers. By connecting InfluxDB, MQTT, Grafana, Node-RED, and Docker, this thesis shows how
+              to collect, store, analyze, and visualize data from multiple IoT devices across your network. This setup
+              can be easily expanded to accommodate additional devices and servers, making it ideal for large-scale IoT
+              deployments.</p>
+          </ul>
+        </div>
 
+
+        <div class="thesis-content lang-hu-x">
+          <h2>M.Sc témák</h2>
+          <ul>
+            <li><b>Python mikroszolgáltatások: Monolitok feltörése</b></li>
+            <p>Ez a témakör a mikroszolgáltatási architektúra Pythonban való megvalósítását kutatja, és a monolitikus
+              alkalmazások moduláris szolgáltatásokra bontásának folyamatára összpontosít. A dolgozat célja ennek a
+              megközelítésnek a hatékonyságának értékelése, valamint ajánlások megfogalmazása a fejlesztők és
+              szervezetek
+              számára. </p>
+            <li><b> A Consul hatékonyságának értékelése a mikroszolgáltatás-architektúra szolgáltatásfelderítésében és
+                konfigurációkezelésében</b></li>
+            <p>Ez a dolgozat annak értékelésére összpontosíthat, hogy a Consul milyen jól teljesít egy
+              mikroszolgáltatási
+              architektúrában, összehasonlítva más szolgáltatásfelderítési és konfigurációkezelési eszközökkel.</p>
+            <li>3. téma</li>
+          </ul>
+
+          <h2>B.Sc témák</h2>
+          <ul>
+            <li><b>Mikroszolgáltatások Python segítségével </b></li>
+            <p>Ez a B.Sc szakdolgozat a Python használatát vizsgálja mikroszolgáltatás-alapú alkalmazások építésére,
+              megvizsgálja a tervezési elveket, a fejlesztési keretrendszereket és a legjobb gyakorlatokat. </p>
+            <li><b>ROS2 alapú autonóm mobil robotvezérlő tervezése és megvalósítása</b> </li>
+            <p> Jelen Bachelor diplomamunka egy autonóm mobil robotrendszer tervezésére és megvalósítására összpontosít
+              Robot Operating System 2 (ROS2) segítségével.</p>
+            <li><b> Robusztus IoT-infrastruktúra felépítése több Raspberry Pi szerverrel</b> </li>
+            <p> Ez a dolgozat egy rendkívül méretezhető és rugalmas IoT infrastruktúra létrehozásáról szól több
+              Raspberry Pi szerver használatával. Az InfluxDB, az MQTT, a Grafana, a Node-RED és a Docker
+              összekapcsolásával ez a dolgozat bemutatja, hogyan lehet adatokat gyűjteni, tárolni, elemezni és
+              megjeleníteni több IoT-eszközről a hálózaton. Ez a beállítás könnyen bővíthető további eszközök és
+              szerverek befogadására, így ideális nagyszabású IoT-telepítésekhez.</p>
+          </ul>
+        </div>
+      </div>
+
+      <script src="./main.js"></script>
     </body>
-
 </html>
